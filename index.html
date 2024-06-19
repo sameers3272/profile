@@ -7,148 +7,199 @@
     <title>Sameer Shaikh Personnel Site</title>
 </head>
 <style>
-  
-    body{
+    body {
         background-color: #ccc;
-        
-margin: 0;
+        margin: 0;
     }
-    .container{
+
+    h1::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to top left, black, white);
+        transition: all 0.5s ease-in-out;
+        transform-origin: right;
+
+    }
+
+    .container {
         background-color: #fff;
         width: 50%;
         margin: auto;
-        padding: 3rem;
+        padding: 3%;
         border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    .flex{
+
+    .flex {
         display: flex;
         align-items: center;
         gap: 2rem;
     }
-    img{
+
+    img {
         width: 150px;
         height: 150px;
         border-radius: 50%;
     }
-    table{
+
+    table {
         width: 100%;
     }
-    table,tr,td,th{
-        border: 1px solid black ;
+
+    table,
+    tr,
+    td,
+    th {
+        border: 1px solid black;
     }
-    th,td{
+
+    th,
+    td {
         text-align: center;
     }
-    h3{
+
+    h3 {
         border-bottom: 2px dashed #000;
         padding-bottom: 5px;
         width: fit-content;
     }
+
+    .skills li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .skills li>strong {
+        flex: 1;
+    }
+
+    .skills li>span {
+        flex: 3;
+    }
+
+    section {
+        transition: all 0.5s ease;
+    }
+
+    .container:hover h1::after {
+        width: 100%;
+    }
 </style>
+
 <body>
-<div class="container">
+    <div class="container">
 
 
-    <section  class="flex">
-        <img src="sameer.jpg" alt="Sameer Shaikh's Profile
-        Picture" width="150" height="150">
-        <div>
-            <h1>Sameer Shaikh</h1>
-            <em><p>Excecutive Web Developer at <strong><a href="https://capita.com/">Capita India Pvt Ltd</a> </strong></p>
-            <p>I am a Full stack, web and Mobile Application Developer. I
-                <span style="color:red">&#10084</span>  to Learn And Develop Moderdern Software Applications  
-            </p>
-        </em>
-        </div>
-        
-    </section>
+        <section class="flex">
+            <a href="sameer.jpg" target="_blank"><img src="sameer.jpg" alt="Sameer Shaikh's Profile
+        Picture" width="150" height="150" /></a>
+            <div>
+                <div style="position: relative;width: fit-content;">
+                    <h1>Sameer Shaikh</h1>
+                </div>
+                <em>
+                    <p>Excecutive Web Developer at <strong><a href="https://capita.com/">Capita India Pvt Ltd</a>
+                        </strong></p>
+                    <p>I am a Full stack, web and Mobile Application Developer. I
+                        <span style="color:red">&#10084</span> to Learn And Develop Moderdern Software Applications
+                    </p>
+                </em>
+            </div>
+
+        </section>
 
 
 
-    <hr>
-    <section>
-        <h3>Books and Teaching <span style="color: red;">❤</span></h3>
-        <ul>
-            <li>Understanding Python with Machine Learning</li>
-            <li>Deep Learning in Real World Applications</li>
-        </ul>
-    </section>
+        <hr>
+        <section>
+            <h3>Books and Teaching <span style="color: red;">❤</span></h3>
+            <ul>
+                <li>Understanding Python with Machine Learning</li>
+                <li>Deep Learning in Real World Applications</li>
+            </ul>
+        </section>
 
-    <section>
-        <h3>Education<span style="color: red;">📖</span></h3>
-       
-        <table>
-            <tbody>
-                <tr>
-                    <th>Years</th>
-                    <th>Course</th>
-                    <th>Education</th>
-                </tr>
-                <tr>
-                    <td>2012-2013</td>
-                    <td>SSC</td>
-                    <td>BT Shahani Navid hind</td>
-                </tr>
-                <tr>
-                    <td>2014-2015</td>
-                    <td>HSC</td>
-                    <td>Poona College</td>
-                </tr>
-                <tr>
-                    <td>2019-2022</td>
-                    <td>BCA</td>
-                    <td>Poona College</td>
-                </tr>
-                <tr>
-                    <td>2023-2025</td>
-                    <td>MCA</td>
-                    <td>Sihagad College</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <h3>Work Experience<span style="color: red;">🎈</span></h3>
-       
-        <table>
-            <tbody>
-                <tr>
-                    <th>Years</th>
-                    
-                    <th>Companies</th>
-                </tr>
-                <tr>
-                    <td>2022-2023</td>
-                    <td>Capita India Pvt Ltd</td>
-                </tr>
-            
-            </tbody>
-        </table>
-    </section>
-    <br>
-    <section>
-        <h3>Skills <span style="color: yellow;">✨</span></h3>
-        <ul style="list-style: none;">
-            <li><strong>React JS</strong> <span>⭐⭐⭐⭐⭐</span></li>
-            <li><strong>React Native</strong> <span>⭐⭐⭐</span></li>
-            <li><strong>Node JS </strong><span>⭐⭐⭐⭐</span></li>
-            <li><strong>PHP</strong> <span>⭐⭐⭐⭐</span></li>
-            <li><strong>Mongo DB</strong> <span>⭐⭐⭐</span></li>
-            <li><strong>JAVA</strong><span>⭐⭐⭐⭐</span></li>
-            <li><strong>Python</strong><span>⭐⭐⭐</span></li>
-            
-        </ul>
-    </section>
-    <br>
-    <footer>
-        <h3>Contact <span style="color: red;">📞</span></h3>
-        Email <a href="mailto:sameers3272@gmail.com">sameers3272@gmail.com</a><br>
-        Mobile <a href="tel:8087336385">8087336385</a><br>
-        
-    </footer>
-    
-</div>
-   
+        <section>
+            <h3>Education<span style="color: red;">📖</span></h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Years</th>
+                        <th>Course</th>
+                        <th>Education</th>
+                    </tr>
+
+                    <tr>
+                        <td>2023-2025</td>
+                        <td>MCA</td>
+                        <td>Sihagad College</td>
+                    </tr>
+                    <tr>
+                        <td>2019-2022</td>
+                        <td>BCA</td>
+                        <td>Poona College</td>
+                    </tr>
+                    <tr>
+                        <td>2014-2015</td>
+                        <td>HSC</td>
+                        <td>Poona College</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2013</td>
+                        <td>SSC</td>
+                        <td>BT Shahani Navid hind</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Work Experience<span style="color: red;">🎈</span></h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Years</th>
+
+                        <th>Companies</th>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>Capita India Pvt Ltd</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <section>
+            <h3>Skills <span style="color: yellow;">✨</span></h3>
+            <ul class="skills" style="list-style: none;">
+                <li><strong>React JS</strong> <span>⭐⭐⭐⭐⭐</span></li>
+                <li><strong>React Native</strong> <span>⭐⭐⭐</span></li>
+                <li><strong>Node JS </strong><span>⭐⭐⭐⭐</span></li>
+                <li><strong>PHP</strong> <span>⭐⭐⭐⭐</span></li>
+                <li><strong>Mongo DB</strong> <span>⭐⭐⭐</span></li>
+                <li><strong>JAVA</strong><span>⭐⭐⭐⭐</span></li>
+                <li><strong>Python</strong><span>⭐⭐⭐</span></li>
+
+            </ul>
+        </section>
+        <br>
+        <footer>
+            <h3>Contact <span style="color: red;">📞</span></h3>
+            Email <a href="mailto:sameers3272@gmail.com">sameers3272@gmail.com</a><br>
+            Mobile <a href="tel:+918087336385">8087336385</a><br>
+
+        </footer>
+
+    </div>
+
 </body>
 
 </html>
